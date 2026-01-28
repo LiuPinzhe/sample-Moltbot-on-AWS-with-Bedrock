@@ -83,7 +83,7 @@ aws cloudformation wait stack-create-complete \
   --stack-name clawdbot-bedrock \
   --region us-west-2
 ```
-
+https://github.com/aws-samples/sample-Moltbot-on-AWS-with-Bedrock/blob/main/README_CN.md
 ### 访问 Clawdbot
 
 ![CloudFormation 输出](images/20260128-105244.jpeg)
@@ -140,6 +140,8 @@ Your Telegram user id: 123456789
 ```
 
 4. **服务器端校验**：通过 SSM 命令免登录校验 或者 登录到 EC2 服务器 键入命令校验： ``clawdbot pairing approve telegram <你的 Pairing code>``
+
+   
 ![CloudFormation Outputs](images/20260128-144241.jpg)
 
 
