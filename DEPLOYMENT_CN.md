@@ -1,4 +1,10 @@
-# openclaw AWS 中国区部署指南
+# OpenClaw AWS 中国区部署指南
+
+## 简介
+
+[OpenClaw](https://github.com/openclaw/openclaw)（前身为 Clawdbot）是一个开源、自托管的个人 AI 助手框架。与 ChatGPT 等云端 AI 助手不同，OpenClaw 运行在你自己控制的基础设施上（本地电脑、云服务器甚至树莓派），并能连接你日常使用的消息平台——WhatsApp、Telegram、Discord、Slack、iMessage 等。它不仅能生成文本，还能作为自主 Agent 代你执行实际任务、自动化工作流，同时保证数据隐私完全掌握在自己手中。
+
+本文档是 OpenClaw 在 AWS 中国区（北京/宁夏）的完整部署指南。由于 AWS 中国区不支持 Amazon Bedrock 服务，本方案采用 SiliconFlow 等 OpenAI 兼容 API 作为 LLM 后端，结合 Graviton ARM 实例实现高性价比部署。文档涵盖前置条件准备、一键 CloudFormation 部署、部署后访问配置、常用运维操作及故障排查，帮助你在约 10 分钟内完成从零到可用的全流程搭建。
 
 > 在 AWS 中国区（北京/宁夏）部署 [openclaw](https://github.com/openclaw/openclaw) 个人 AI 助手。使用 SiliconFlow 等 OpenAI 兼容 API，Graviton ARM 处理器，一键 CloudFormation 部署。
 
